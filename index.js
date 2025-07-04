@@ -1,10 +1,7 @@
 const express = require("express");
-const cors = require("cors");
 const routeData = require("./data/route.json");
 
 const app = express();
-app.use(cors());
-
 let index = 0;
 
 app.get("/api/location", (req, res) => {
